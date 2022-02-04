@@ -53,6 +53,8 @@ export const freezeScroll = {
                 return this.shouldScroll(e.target, delta);
             };
         }
+        
+        return true;
     },
     shouldScroll(el, delta) {
         if (el.scrollTop === 0 && delta < 0) return true;
